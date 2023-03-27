@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light on off</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-heading">
+        <h1>Can you turn the light on? </h1>
+        <button onclick="turnon() ">Turn on light</button>
+        <img src="./lightoff.png" id="myimage">
+        <button onclick="turnoff()">Turn of light</button>
+
+    </div>
+    <script>
+        var img = document.getElementById("myimage")
+        function turnon(){
+            img.setAttribute("src","lighton.png");
+            img.style.width="250px";
+            img.style.height="250px";
+        }
+        function turnoff(){
+            img.setAttribute("src","lightoff.png");
+            img.style.width="250px";
+            img.style.height="250px";
+        }
+    </script>
+
+    
+</body>
+</html>
